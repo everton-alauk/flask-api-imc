@@ -1,9 +1,9 @@
 class Person:
-    def __init__(self, weight, height):
+    def __init__(self, weight, height, imc, description):
         self.weight = weight
         self.height = height
-        self.imc = None
-        self.description = None
+        self.imc = imc
+        self.description = description
 
     def get(self):
         self.imc = int(self.weight) / float(self.height) ** 2

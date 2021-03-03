@@ -15,7 +15,7 @@ export FLASK_ENV=development
 With 'pip` run:
 
 ``` shell
-pip install Flask
+pip install -r requirements.txt
 ```
 
 ``` shell

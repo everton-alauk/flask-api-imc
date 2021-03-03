@@ -3,10 +3,12 @@ import json
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
 
 from person import Person
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/table', methods=['GET'])
 def table():
