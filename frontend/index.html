@@ -9,19 +9,31 @@
       <div class="data">
         <div class="form">
           <div class="row">
+            <div id="imc-table"></div>
+            <br/><br/>
+          </div>
+          <div class="row">
             <label>Altura</label>
-            <input id="altura" value="1.80"  />
+            <input id="altura" value="0.00" placeholder="0.00" />
           </div>
           <div class="row">
             <label>Peso</label>
-            <input id="peso" value="80" />
+            <input id="peso" value="0.00" placeholder="0.00" />
           </div>
           <button type="button" class="action">Calcular</button>
         </div>
       </div>
       <hr />
-      <div class="data">Seu IMC &eacute; <span id="imc">SPAN</span></div>
+      <div class="data">Seu IMC &eacute; <span id="imc-view"></span></div>
     </div>
   </body>
+
+  <script lang="text/javascript" src="http/HttpClient.js"></script>
+  <script lang="text/javascript" src="domain/Person.js"></script>
+  <script lang="text/javascript" src="services/ImcService.js"></script>
+  <script lang="text/javascript" src="controller/ImcController.js"></script>
+  <script lang="text/javascript" src="framework/ViewComponent.js"></script>
+  <script lang="text/javascript" src="views/ImcView.js"></script>
+  <script lang="text/javascript" src="views/ImcTableView.js"></script>
   <script lang="text/javascript" src="index.js"></script>
 </html>

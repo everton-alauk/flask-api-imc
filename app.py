@@ -10,7 +10,7 @@ from person import Person
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/table', methods=['GET'])
+@app.route('/imc/table', methods=['GET'])
 def table():
     data = {
         "0": "Magreza",
@@ -20,7 +20,7 @@ def table():
     }
     return data
 
-@app.route('/calculate', methods=['POST'])
+@app.route('/imc/calculate', methods=['POST'])
 def calculate():
     response = json.loads(request.data)
     person = Person(**response).get()
