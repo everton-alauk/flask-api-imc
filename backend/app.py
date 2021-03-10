@@ -10,8 +10,8 @@ from flask_cors import CORS
 from person import Person
 
 app = Flask(__name__,
-    template_folder=os.path.abspath('./frontend'),
-    static_folder=os.path.abspath('./frontend/static'))
+    template_folder=os.path.abspath('../frontend'),
+    static_folder=os.path.abspath('../frontend/static'))
 
 CORS(app)
 
