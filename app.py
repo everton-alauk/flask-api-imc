@@ -1,14 +1,23 @@
+import os
 import json
 
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask import render_template
 from flask_cors import CORS
 
 from person import Person
 
-app = Flask(__name__)
+app = Flask(__name__,
+    template_folder=os.path.abspath('./frontend'),
+    static_folder=os.path.abspath('./frontend/static'))
+
 CORS(app)
+
+@app.route('/', methods=['GET'])
+def get():
+    return render_template('index.html')
 
 @app.route('/imc/table', methods=['GET'])
 def table():

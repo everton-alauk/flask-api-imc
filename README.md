@@ -1,25 +1,19 @@
 # IMC Flask API
 
-### Export the variables
-
 ``` shell
-export FLASK_APP=app.py
+npm i 
 ```
 
 ``` shell
-export FLASK_ENV=development
-```
-
-### Install packages
-
-With 'pip` run:
-
-``` shell
-pip install -r requirements.txt
+npm run build
 ```
 
 ``` shell
-flask run
+docker build -t flask-app Dockerfile .
+```
+
+``` shell
+docker run flask-app
 ```
 
 ```

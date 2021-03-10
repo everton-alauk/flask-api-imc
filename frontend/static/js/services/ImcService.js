@@ -1,4 +1,6 @@
-class ImcService {
+import HttpClient from '../http/HttpClient'
+
+export default class ImcService {
     constructor() {
         this.hostname = "http://localhost:5000";
     }

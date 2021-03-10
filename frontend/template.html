@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <title>FIT Calculadora IMC</title>
-    <link href="index.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -28,12 +28,5 @@
     </div>
   </body>
 
-  <script lang="text/javascript" src="http/HttpClient.js"></script>
-  <script lang="text/javascript" src="domain/Person.js"></script>
-  <script lang="text/javascript" src="services/ImcService.js"></script>
-  <script lang="text/javascript" src="controller/ImcController.js"></script>
-  <script lang="text/javascript" src="framework/ViewComponent.js"></script>
-  <script lang="text/javascript" src="views/ImcView.js"></script>
-  <script lang="text/javascript" src="views/ImcTableView.js"></script>
-  <script lang="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
 </html>
